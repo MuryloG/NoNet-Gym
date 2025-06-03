@@ -2,16 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>NoNet Gym - Login</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Login</h2>
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="senha" placeholder="Senha">
-    <button onclick="login()">Entrar</button>
+  <div class="login-container">
+    <h1>NoNet <span class="highlight">GYM</span></h1>
+    <p>Seu treino, seu progresso.</p>
+    
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+      <p id="error-message" style="color: red; display: none;">Email ou senha incorretos</p>
+    </form>
   </div>
+
   <script src="js/login.js"></script>
 </body>
 </html>
