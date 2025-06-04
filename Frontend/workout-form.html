@@ -1,20 +1,23 @@
+<!-- workout-form.html -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastrar Treino</title>
+  <meta charset="UTF-8" />
+  <title>Adicionar Treino</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Cadastro de Treino</h2>
-    <input type="text" id="nome" placeholder="Nome do exercício">
-    <input type="number" id="reps" placeholder="Repetições">
-    <input type="number" id="sets" placeholder="Séries">
-    <input type="number" id="peso" placeholder="Peso (kg)">
-    <input type="date" id="data" placeholder="Data">
-    <button onclick="salvarTreino()">Salvar</button>
-  </div>
+  <h1>Adicionar Treino</h1>
+
+  <form id="workoutForm">
+    <input type="text" id="nome" placeholder="Exercício" required /><br />
+    <input type="number" id="reps" placeholder="Repetições" required /><br />
+    <input type="number" id="sets" placeholder="Séries" required /><br />
+    <input type="number" id="peso" placeholder="Peso (kg)" required /><br />
+    <input type="date" id="data" required /><br />
+    <button type="submit">Adicionar Treino</button>
+  </form>
+
   <script src="js/workout-form.js"></script>
 </body>
 </html>

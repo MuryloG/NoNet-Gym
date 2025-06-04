@@ -1,19 +1,20 @@
+<!-- workout-list.html -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lista de Treinos</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Meus Treinos</h2>
+  <h1>Treinos do Dia</h1>
 
-    <input type="date" id="filtroData">
-    <button onclick="filtrarPorData()">Filtrar por Data</button>
+  <label for="filtroData">Selecionar Data:</label>
+  <input type="date" id="filtroData" />
+  <button onclick="buscarTreinosPorData()">Buscar</button>
 
-    <div id="lista-treinos"></div>
-  </div>
+  <div id="resultadoTreinos"></div>
+
   <script src="js/workout-list.js"></script>
 </body>
 </html>
